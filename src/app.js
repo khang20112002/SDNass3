@@ -18,7 +18,7 @@ var app = express();
 const url = 'mongodb://127.0.0.1/assignment3'
 const connect = mongoose.connect(url)
 connect.then((db)=>{
-  console.log("Connected to the Database");
+  console.log("Database connected");
 }).catch((err)=>{
   console.log(err);
 })

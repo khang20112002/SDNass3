@@ -37,7 +37,7 @@
                 <div class="navbar-item">
                     <div class="buttons">
                         <% if (loggedIn) { %>
-                            <strong> <%= user.isAdmin %>, <%= user.name %> </strong>
+                            <strong> <% if(user.isAdmin) {%><p>Admin</p> <% }else {%>  <p>User</p><%} %>, <%= user.name %> </strong>
                             <a class="navbar-item" href="/profile" style="margin-left: 1rem;">
                                 <strong><i class="fa fa-user"></i> Profile</strong>
                             </a>

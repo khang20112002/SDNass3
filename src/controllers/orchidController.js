@@ -46,7 +46,7 @@ class orchidController {
             if (orchidName) {
                 res.redirect('/orchids');
                 console.log('Orchid already exists');
-                return JavaScript(alert("Hello this is an alert"));
+                // return JavaScript(alert("Hello this is an alert"));
             } else {
                 orchid.save().then(() => {
                     res.redirect('/orchids');

@@ -41,8 +41,8 @@ class userController {
             errors.push({ msg: 'Please enter all fields' });
         }
 
-        if (password.length < 6) {
-            errors.push({ msg: 'Password must be at least 6 characters' });
+        if (password.length < 2) {
+            errors.push({ msg: 'Password must be at least 2 characters' });
         }
 
         if (errors.length > 0) {
